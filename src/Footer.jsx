@@ -25,7 +25,6 @@ export const Footer = () => {
                 <p><a href="" className='hover:underline'>Saas Dashboard</a> </p>
             </div>
 
-
             <div>
                 <h2 className='font-bold'>Socials</h2>
                 <p><a href="" className='hover:underline'>Facebook</a> </p>
