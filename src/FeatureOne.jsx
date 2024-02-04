@@ -5,9 +5,9 @@ import { faBrush, faGear, faGrip } from '@fortawesome/free-solid-svg-icons'
 
 export const FeatureOne = () => {
   return (
-    <section className='min-h-dvh flex items-center justify-center w-6/12 mx-auto'>
-        <div className='font-poppins text-white flex items-center gap-16'>
-            <img src={dashboard} className='w-1/2 rounded-2xl shadow-2xl shadow-white/50'/>
+    <section className='min-h-dvh flex items-center justify-center lg:w-6/12 w-10/12 mx-auto pt-32' id='features'>
+        <div className='font-poppins text-white flex items-center gap-16 lg:flex-row flex-col'>
+            <img src={dashboard} className='lg:w-1/2 rounded-2xl shadow-2xl shadow-white/50'/>
             <div className='flex flex-col gap-6'>
                 <h2 className='text-5xl font-bold leading-tight'>Fully Customizable Dashboard</h2>
                 <p className='text-lg'> Pattern Finder has been designed meticoulosly to

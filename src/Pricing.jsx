@@ -4,12 +4,12 @@ import React from 'react'
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className='flex flex-col font-poppins gap-12 items-center justify-center min-h-dvh w-4/5 mx-auto'>
+    <section id="pricing" className='flex flex-col font-poppins gap-12 items-center justify-center min-h-dvh md:w-4/5 w-10/12 mx-auto py-24'>
         <div className='title__box text-white flex items-center justify-center flex-col'>
-        <h2 className='text-7xl font-bold text-white'> Choose your plan </h2>
+        <h2 className='text-4xl md:text-7xl font-bold text-white'> Choose your plan </h2>
         <p className='mt-4 text-lg'> Start making informed decisions today </p>
         </div>
-        <div className='flex w-full gap-16 justify-around'>
+        <div className='flex w-full gap-16 justify-around flex-col md:flex-row'>
             <article className='text-white bg-[#374357] p-[2em] rounded-lg hover:scale-110 transition-all basis-full flex flex-col items-start justify-between gap-4'>
                 <h4 className='text-xl font-bold bg-lime-700 text-lime-300 py-[.25em] px-[1em] rounded-md inline-block'>Personal Plan</h4>
                 <h2 className='text-4xl font-bold'>$9.99 <span className='text-lg'>/ month</span></h2>

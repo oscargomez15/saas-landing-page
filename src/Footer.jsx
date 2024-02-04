@@ -5,8 +5,8 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer className='font-poppins text-white bg-[#252525] py-8'>
-        <div className='w-10/12 mx-auto flex items-center justify-between border-b-[1px] pb-8'>
-            <div className='flex items-center gap-2'>
+        <div className='w-10/12 mx-auto flex sm:flex-row flex-col items-start sm:justify-between justify-center border-b-[1px] pb-8'>
+            <div className='flex self-center gap-2'>
                 <FontAwesomeIcon icon={faSquarePollVertical} size='xl' className='text-lime-400'/>
                 <h2 className='text-2xl font-bold'> Pattern Finder </h2>
             </div>
