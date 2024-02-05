@@ -1,13 +1,45 @@
-import React from 'react'
-import { faArrowRightLong, faSquarePollVertical } from "@fortawesome/free-solid-svg-icons"
+import React, { useRef } from 'react'
+import { faArrowLeft, faArrowRightLong, faSquarePollVertical } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLine, faMeta, faSalesforce, faSquareXTwitter, faYahoo } from '@fortawesome/free-brands-svg-icons'
 
 export const Hero = () => {
+  const hamburger = useRef(null);
+
+  const closeHamburger = () =>{
+    console.log("Clicked");
+    hamburger.current.classList.toggle('translate-x-full');
+  }
+
   return (
-    <main className="wrapper flex flex-col md:w-4/5 mx-auto min-h-dvh">
-    <nav className="flex justify-between pt-4 mx-auto md:mx-0">
-      <header className="flex items-center justify-center text-4xl  ">
+    <main className="wrapper flex flex-col md:w-4/5 mx-auto min-h-dvh overflow-x-hidden relative" id='home'>
+    <div className="hamb__content translate-x-full transition-all flex flex-col z-10 absolute min-h-dvh w-full bg-[#1b1b1b] text-white font-poppins px-4" ref={hamburger}>
+      <div className="close flex items-center gap-2 border-b-4" onClick={closeHamburger}>
+        <FontAwesomeIcon icon={faArrowLeft} className='h-8 py-4'/>
+      </div>
+
+      <ul className='hamb__menu text-4xl font-bold'>
+        <li className='border-b-4 py-4 border-[#383838]'>Features</li>
+        <li className='border-b-4 py-4 border-[#383838]'>Pricing</li>
+        <li className='border-b-4 py-4 border-[#383838]'>Log In</li>
+        <li className='border-b-4 py-4 border-[#383838]'>Free Trial</li>
+      </ul>
+
+      <div className="hamb__logo flex min-h-full items-end justify-center grow mb-8">
+        <FontAwesomeIcon icon={faSquarePollVertical} className="text-lime-400 h-6"></FontAwesomeIcon>
+        <h2 className="font-poppins font-bold ml-2 text-white text-xl">Pattern Finder</h2>
+      </div>
+    </div>
+
+    <nav className="flex justify-around items-center md:mx-0 h-20">
+
+    <div className="hamb__container h-6 w-8 flex items-center relative hover:cursor-pointer md:hidden" onClick={closeHamburger}>
+        <span className='hamburger__symbol h-1 w-8 bg-slate-100
+        before:content-[""] before:absolute before:h-1 before:w-full before:bg-slate-100 before:bottom-0
+        after:content-[""] after:absolute after:w-full after:h-1 after:bg-slate-100 after:top-0'></span>
+    </div>
+
+      <header className="flex items-center justify-center text-4xl">
         <FontAwesomeIcon icon={faSquarePollVertical} className="text-lime-400"></FontAwesomeIcon>
         <h2 className="font-poppins font-bold ml-2 text-white">Pattern Finder</h2>
       </header>
@@ -26,7 +58,7 @@ export const Hero = () => {
       </ul>
     </nav>
 
-    <div className="hero__content flex flex-col flex-1 justify-center items-center lg:w-6/12 mx-auto min-h-full">
+    <div className="hero__content flex flex-col flex-1 justify-center items-center lg:w-6/12 w-11/12 mx-auto min-h-full">
       <h1 className="hero__title font-poppins text-gray-50 text-4xl 2xl:text-7xl font-bold text-center">
       <span className='text-lime-400'>Know your future</span>, make better decisions with predictive analytics. </h1>
       <p className="hero__paragraph text-white font-poppins size mt-4 text-center"> Empowering

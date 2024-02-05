@@ -10,27 +10,26 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faSquarePollVertical} size='xl' className='text-lime-400'/>
                 <h2 className='text-2xl font-bold'> Pattern Finder </h2>
             </div>
+
             <div>
                 <h2 className='font-bold'>Site Map</h2>
-                <p> <a href="" className='hover:underline'>Home</a> </p>
-                <p> <a href="" className='hover:underline'>Features</a> </p>
-                <p> <a href="" className='hover:underline'>Log in</a> </p>
+                <p> <a href="#home" className='hover:underline'>Home</a> </p>
+                <p> <a href="#features" className='hover:underline'>Features</a> </p>
+                <p> <a href="#" className='hover:underline'>Log in</a> </p>
             </div>
 
             <div>
                 <h2 className='font-bold'>Other Projects</h2>
-                <p><a href="" className='hover:underline'>Portfolio</a> </p>
-                <p><a href="" className='hover:underline'>Videogames Ecommerce</a> </p>
-                <p><a href="" className='hover:underline'>Hangman</a> </p>
-                <p><a href="" className='hover:underline'>Saas Dashboard</a> </p>
+                <p><a target='_blank' href="https://oscargomez15.github.io/personal-portfolio/" className='hover:underline'>Portfolio</a> </p>
+                <p><a target='_blank' href="https://oscargomez15.github.io/pixelworldecommerce/" className='hover:underline'>Videogames Ecommerce</a> </p>
+                <p><a target='_blank' href="https://oscargomez15.github.io/hangman/" className='hover:underline'>Hangman</a> </p>
             </div>
 
             <div>
                 <h2 className='font-bold'>Socials</h2>
-                <p><a href="" className='hover:underline'>Facebook</a> </p>
-                <p><a href="" className='hover:underline'>Instagram</a> </p>
-                <p><a href="" className='hover:underline'>LinkedIn</a> </p>
-                <p><a href="" className='hover:underline'>Github</a> </p>
+                <p><a target="_blank" href="https://www.instagram.com/oscarglopez98/" className='hover:underline'>Instagram</a> </p>
+                <p><a target="_blank" href="https://www.linkedin.com/in/oscargomez1998/" className='hover:underline'>LinkedIn</a> </p>
+                <p><a target="_blank" href="https://github.com/oscargomez15" className='hover:underline'>Github</a> </p>
             </div>
         </div>
 
